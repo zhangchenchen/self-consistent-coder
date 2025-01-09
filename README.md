@@ -59,7 +59,7 @@
   * [4.2 维系亲密关系最重要的一点](chapter4/section2.md)
   * [4.3 情绪稳定是个伪命题](chapter4/section3.md)
 * [第五章：只工作不上班](chapter5/README.md)
-  * [5.1 副业没那么难](chapter5/section1.md)
+  * [5.1 我所接触到的程序员副业](chapter5/section1.md)
   * [5.2 gap 无罪，寻找属于你自己的pathless path](chapter5/section2.md)
   * [5.3 其实，没工作，也能活](chapter5/section3.md)
 * [结语：成为一个自洽的程序员](epilogue.md) 
