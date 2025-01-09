@@ -1,0 +1,17 @@
+# 目录
+
+* [前言](preface.md)
+* [第一章：工作中的情绪困境](chapter1/README.md)
+  * [1.1 焦虑：KPI与绩效压力](chapter1/section1.md)
+  * [1.2 倦怠：重复性工作与成长瓶颈](chapter1/section2.md)
+  * [1.3 迷茫：职业发展与人生方向](chapter1/section3.md)
+  * [1.4 抑郁：工作倦怠与心理健康](chapter1/section4.md)
+* [第二章：认知的转变](chapter2/README.md)
+  * [2.1 从价值理性到情感认知](chapter2/section1.md)
+  * [2.2 接纳负面情绪](chapter2/section2.md)
+  * [2.3 找到工作与生活的平衡](chapter2/section3.md)
+* [第三章：自洽之路](chapter3/README.md)
+  * [3.1 重新定义成功](chapter3/section1.md)
+  * [3.2 建立健康的自我认知](chapter3/section2.md)
+  * [3.3 在工作中寻找意义](chapter3/section3.md)
+* [结语：成为一个自洽的程序员](epilogue.md) 

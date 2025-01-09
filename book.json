@@ -1,0 +1,29 @@
+{
+  "title": "自洽的程序员",
+  "author": "pekingzcc",
+  "description": "这是一本关于程序员职业生涯中的情绪管理与心理健康的书籍，帮助读者在工作中找到内心的平衡与自洽。",
+  "language": "zh-hans",
+  "structure": {
+    "readme": "README.md"
+  },
+  "plugins": [
+    "-sharing",
+    "sharing-plus",
+    "expandable-chapters",
+    "search-pro",
+    "copy-code-button",
+    "back-to-top-button"
+  ],
+  "pluginsConfig": {
+    "sharing": {
+      "douban": true,
+      "facebook": false,
+      "google": false,
+      "twitter": false,
+      "weibo": true,
+      "all": [
+        "douban", "weibo"
+      ]
+    }
+  }
+} 
