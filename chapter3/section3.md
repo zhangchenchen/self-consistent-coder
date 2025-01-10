@@ -1,4 +1,4 @@
-# 3.2 同事太优秀怎么办？
+# 3.3 同事太优秀怎么办？
 
 ![职场压力](../images/chapter3/workplace-pressure.jpg)
 
