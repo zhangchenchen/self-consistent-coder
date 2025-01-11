@@ -1,5 +1,7 @@
 # 自洽的程序员
 
+[在线阅读](https://self-consistent-coder.readthedocs.io/zh-cn/latest/)
+
 ## 简介
 
 ### 这不是一本技术书

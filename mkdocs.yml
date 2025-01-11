@@ -4,6 +4,9 @@ site_author: 辣条加辣
 
 theme:
     name: rtd-dropdown
+    custom_dir: custom_theme/
+    static_templates:
+        - 404.html
 
 markdown_extensions:
     - toc:

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{ super() }}
+
+{% if not page.is_homepage %}
+<hr>
+<h2>关于作者</h2>
+<h3>公众号：辣条加辣</h3>
+<p>平时会分享一些职场、技术和个人成长的思考。<br>
+欢迎关注交流，一起在职场中成长。</p>
+<p><img src="{{ base_url }}/assets/images/qrcode.jpg" alt="公众号二维码"></p>
+{% endif %}
+{% endblock %}
