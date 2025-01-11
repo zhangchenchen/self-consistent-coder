@@ -1,0 +1,54 @@
+site_name: 自洽的程序员
+site_description: 关于程序员职场和生活的思考
+site_author: 辣条加辣
+
+theme:
+    name: rtd-dropdown
+
+markdown_extensions:
+    - toc:
+        permalink: true
+    - admonition
+    - footnotes
+
+nav:
+    - 首页: index.md
+    - 前言: preface/index.md
+    - 第一章：建立你的工作哲学:
+        - 概述: chapter1/index.md
+        - 1.1 第一性原理思考工作: chapter1/section1.md
+        - 1.2 工作挣扎是常态: chapter1/section2.md
+        - 1.3 工作承载不了太多意义，但也不要陷入工作虚无主义: chapter1/section3.md
+    - 第二章 工作方法论:
+        - 概述: chapter2/index.md
+        - 2.1 心态开放，你的职场第一课: chapter2/section1.md
+        - 2.2 下场去做，你的职场第二课: chapter2/section2.md
+        - 2.3 寻求帮助是项高级技能: chapter2/section3.md
+        - 2.4 害怕直面冲突，怎样才能支棱起来: chapter2/section4.md
+        - 2.5 如何面对职场PUA: chapter2/section5.md
+        - 2.6 内耗，是从拒绝沟通开始的: chapter2/section6.md
+        - 2.7 不喜欢编程，还要坚守程序员这个岗位吗: chapter2/section7.md
+        - 2.8 工作倦怠了吗，试试三叶草模型: chapter2/section8.md
+        - 2.9 天天用AI，以后自己不会写代码怎么办: chapter2/section9.md
+        - 2.10 职场中如何做选择: chapter2/section10.md
+        - 2.11 职场中最实用的三个思维模型: chapter2/section11.md
+    - 第三章 工作中的人际关系:
+        - 概述: chapter3/index.md
+        - 3.1 领导一对一（1on1）聊什么: chapter3/section1.md
+        - 3.2 领导让我提意见，我该怎么提: chapter3/section2.md
+        - 3.3 同事太优秀了，我嫉妒到想退休养猪: chapter3/section3.md
+        - 3.4 同事是傻逼，我有厌蠢症，实在受不了了: chapter3/section4.md
+        - 3.5 卷王太凶残，我要不要'反卷'？: chapter3/section5.md
+        - 3.6 我没有晋升不重要，但是他的晋升让我不爽: chapter3/section6.md
+    - 第四章 工作与家庭:
+        - 概述: chapter4/index.md
+        - 4.1 好的伴侣可以帮你消化工作上的负面情绪: chapter4/section1.md
+        - 4.2 维系亲密关系最重要的一点: chapter4/section2.md
+        - 4.3 情绪稳定是个伪命题: chapter4/section3.md
+    - 第五章 只工作不上班:
+        - 概述: chapter5/index.md
+        - 5.1 我所接触到的程序员副业: chapter5/section1.md
+        - 5.2 Gap无罪，寻找属于你自己的pathless path: chapter5/section2.md
+        - 5.3 其实，没工作，也能活的很好: chapter5/section3.md
+    - 结语：成为一个自洽的程序员:
+        - 概述: epilogue/index.md
