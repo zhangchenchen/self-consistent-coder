@@ -62,7 +62,7 @@
 * [第五章：只工作不上班](./docs/chapter5/index.md)
   * [5.1 我所接触到的程序员副业](./docs/chapter5/section1.md)
   * [5.2 gap 无罪，寻找属于你自己的pathless path](./docs/chapter5/section2.md)
-  * [5.3 其实，没工作，也能活](./docs/chapter5/section3.md)
+  * [5.3 其实，不工作，也能活得很好](./docs/chapter5/section3.md)
 * [结语：成为一个自洽的程序员](./docs/epilogue.md) 
 
 ## 关于作者

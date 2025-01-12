@@ -53,5 +53,4 @@ nav:
         - 5.1 我所接触到的程序员副业: chapter5/section1.md
         - 5.2 Gap无罪，寻找属于你自己的pathless path: chapter5/section2.md
         - 5.3 其实，没工作，也能活的很好: chapter5/section3.md
-    - 结语：成为一个自洽的程序员:
-        - 概述: epilogue/index.md
+    - 结语：成为一个自洽的程序员: epilogue.md
