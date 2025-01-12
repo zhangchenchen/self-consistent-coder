@@ -74,4 +74,6 @@
 ![公众号二维码](./docs/assets/images/qrcode.jpg)
 
 ---
-本书内容持续更新中...
+
+## 许可证
+本书采用 [CC BY-NC-SA 4.0](LICENSE.md) 协议开源。
