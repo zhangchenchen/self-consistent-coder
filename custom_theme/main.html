@@ -3,12 +3,213 @@
 {% block content %}
 {{ super() }}
 
-{% if not page.is_homepage %}
-<hr>
-<h2>关于作者</h2>
-<h3>公众号：辣条加辣</h3>
-<p>平时会分享一些职场、技术和个人成长的思考。<br>
-欢迎关注交流，一起在职场中成长。</p>
-<p><img src="{{ base_url }}/assets/images/qrcode.jpg" alt="公众号二维码"></p>
-{% endif %}
+<style>
+    .author-section {
+        margin: 40px 0;
+        padding: 20px;
+        background: var(--md-default-bg-color);
+        border-radius: 8px;
+        position: relative;
+        margin-top: 80px;
+    }
+
+    .author-section::before {
+        content: '✦ ✦ ✦';
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: var(--md-default-fg-color--lighter);
+        letter-spacing: 20px;
+        font-size: 20px;
+        background: var(--md-default-bg-color);
+        padding: 0 20px;
+    }
+
+    .author-section::after {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(
+            90deg, 
+            transparent, 
+            var(--md-default-fg-color--lighter) 20%,
+            var(--md-default-fg-color--lighter) 80%,
+            transparent
+        );
+    }
+
+    .author-section h2 {
+        margin-bottom: 20px;
+        color: var(--md-primary-fg-color);
+        text-align: left;
+        font-size: 1.5em;
+        padding-left: 15px;
+    }
+
+    .author-timeline {
+        border-left: 3px solid var(--md-primary-fg-color);
+        padding-left: 15px;
+    }
+
+    .timeline-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .timeline-icon {
+        font-size: 24px;
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
+
+    .timeline-content {
+        flex: 1;
+    }
+
+    .timeline-content strong {
+        display: block;
+        color: var(--md-primary-fg-color);
+        margin-bottom: 5px;
+    }
+
+    .timeline-content p {
+        margin: 0;
+        color: var(--md-typeset-color);
+    }
+
+    .wechat-section {
+        margin-top: 30px;
+        padding: 20px;
+        background: var(--md-code-bg-color);
+        border-radius: 8px;
+    }
+
+    .wechat-section h3 {
+        text-align: left;
+        color: var(--md-primary-fg-color);
+        margin-bottom: 15px;
+    }
+
+    .wechat-section img {
+        max-width: 200px;
+        margin: 10px 0;
+        border-radius: 4px;
+        display: block;
+    }
+
+    .wechat-section p {
+        margin: 10px 0;
+        color: var(--md-typeset-color);
+        text-align: left;
+    }
+
+    [data-md-color-scheme="slate"] .timeline-content {
+        color: var(--md-default-fg-color);
+    }
+
+    .section-title {
+        position: relative;
+        margin: -25px -25px 25px -25px;
+        padding: 20px 25px;
+        color: var(--md-primary-fg-color);
+        font-size: 1.5em;
+        border-bottom: 1px solid var(--md-default-fg-color--lightest);
+        background: linear-gradient(
+            145deg,
+            var(--md-code-bg-color--light) 0%,
+            var(--md-code-bg-color) 100%
+        );
+        border-radius: 12px 12px 0 0;
+    }
+
+    .author-timeline {
+        border-left: 3px solid var(--md-primary-fg-color);
+        padding-left: 15px;
+        margin-left: 15px;
+    }
+
+    .wechat-section {
+        margin-top: 40px;
+        padding: 25px;
+        background: linear-gradient(
+            145deg,
+            var(--md-code-bg-color) 0%,
+            var(--md-code-bg-color--light) 100%
+        );
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .wechat-section h3 {
+        position: relative;
+        margin: -25px -25px 25px -25px;
+        padding: 20px 25px;
+        color: var(--md-primary-fg-color);
+        font-size: 1.2em;
+        border-bottom: 1px solid var(--md-default-fg-color--lightest);
+        background: linear-gradient(
+            145deg,
+            var(--md-code-bg-color--light) 0%,
+            var(--md-code-bg-color) 100%
+        );
+        border-radius: 12px 12px 0 0;
+    }
+
+    .author-info {
+        padding: 25px;
+        background: linear-gradient(
+            145deg,
+            var(--md-code-bg-color) 0%,
+            var(--md-code-bg-color--light) 100%
+        );
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        margin-bottom: 30px;
+    }
+</style>
+
+<div class="author-section">
+    <div class="author-info">
+        <h3>关于作者</h3>
+        <div class="author-timeline">
+            <div class="timeline-item">
+                <span class="timeline-icon">🎓</span>
+                <div class="timeline-content">
+                    <strong>2013-2016</strong>
+                    <p>毕业于北大软件与微电子学院</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-icon">💻</span>
+                <div class="timeline-content">
+                    <strong>2016-2024</strong>
+                    <p>编码八年，混迹于国企，大厂，外企</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-icon">🚀</span>
+                <div class="timeline-content">
+                    <strong>2025-至今</strong>
+                    <p>独立开发/一人公司/只工作不上班（其实就是社会闲散人员）</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wechat-section">
+        <h3>公众号：辣条加辣</h3>
+        <img src="{{ base_url }}/assets/images/qrcode.jpg" alt="公众号二维码">
+        <p>更多技术思考和生活感悟</p>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+{{ super() }}
 {% endblock %}
