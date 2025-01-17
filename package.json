@@ -2,6 +2,6 @@
   "name": "self-consistent-coder",
   "version": "1.0.0",
   "scripts": {
-    "build": "apt-get update && apt-get install -y fonts-noto-cjk && python3 -m pip install --upgrade pip && python3 -m pip install -r requirements.txt && python3 -m mkdocs build"
+    "build": "python3 -m pip install --upgrade pip && python3 -m pip install -r requirements.txt && python3 -m mkdocs build"
   }
 } 
