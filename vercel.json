@@ -13,7 +13,8 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/site/$1"
+      "dest": "/$1"
     }
-  ]
+  ],
+  "outputDirectory": "site"
 } 
