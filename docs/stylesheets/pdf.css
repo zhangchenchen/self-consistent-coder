@@ -1,4 +1,8 @@
 /* PDF 样式 */
+body {
+    font-family: "Noto Sans CJK SC", sans-serif;
+}
+
 .pdf-footer {
     margin-top: 4rem;
     padding-top: 2rem;
