@@ -2,7 +2,7 @@
 
 [在线阅读](https://self-consistent-coder.vercel.app/) 
 
-> 如果打不开，可以用这个：[备份链接](https://self-consistent-coder.readthedocs.io/zh/cn/latest/)
+> 如果打不开，可以用这个：[备份链接](https://self-consistent-coder.readthedocs.io/)
 
 ## 简介
 
