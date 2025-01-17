@@ -75,7 +75,7 @@ plugins:
       exclude_pages:
         - 'index.md'
       custom_template_path: docs/pdf_template
-      debug_html: true
+      debug_html: false
       show_anchors: false
 
 # 扩展配置

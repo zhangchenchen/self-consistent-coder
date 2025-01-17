@@ -38,7 +38,7 @@
 
 更多职场、个人成长、程序员副业的探索和思考
 
-![公众号：辣条加辣](/assets/images/qrcode.jpg)
+![公众号：辣条加辣](./assets/images/qrcode.jpg)
 
 
 —— 写于2025年1月12日
