@@ -77,8 +77,7 @@ plugins:
       custom_template_path: docs/pdf_template
       debug_html: false
       show_anchors: false
-      font_family: "Noto Sans CJK SC"
-      font_path: ["docs/fonts/"]
+      font_family: "Source Han Sans CN, Noto Sans CJK SC, WenQuanYi Micro Hei, Microsoft YaHei, sans-serif"
       language: zh
       compress: true
 

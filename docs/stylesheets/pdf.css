@@ -1,6 +1,6 @@
 /* PDF 样式 */
 body {
-    font-family: "Noto Sans CJK SC", sans-serif;
+    font-family: "Source Han Sans CN", "Noto Sans CJK SC", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
 }
 
 .pdf-footer {
