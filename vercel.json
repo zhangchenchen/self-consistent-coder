@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "buildCommand": "chmod +x vercel-build.sh && ./vercel-build.sh",
+  "buildCommand": "chmod +x build.sh && ./build.sh",
   "outputDirectory": "site",
-  "installCommand": "pip install -r requirements.txt",
   "builds": [
     {
-      "src": "mkdocs.yml",
+      "src": "build.sh",
       "use": "@vercel/static-build"
     }
   ]
