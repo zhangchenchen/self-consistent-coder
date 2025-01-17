@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{ super() }}
+
+<!-- 原有的作者信息和公众号部分保持不变 -->
+<div class="wechat-card">
+    <div class="author-info">
+        <h2>👨‍💻 关于作者</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="emoji">🎓</span>
+                <strong>2013-2016</strong>
+                <p>毕业于北大软件与微电子学院</p>
+            </div>
+            <div class="timeline-item">
+                <span class="emoji">💻</span>
+                <strong>2016-2024</strong>
+                <p>编码八年，混迹于国企，大厂，外企</p>
+            </div>
+            <div class="timeline-item">
+                <span class="emoji">🚀</span>
+                <strong>2025-至今</strong>
+                <p>独立开发/一人公司/只工作不上班（其实就是社会闲散人员）</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="divider"></div>
+    
+    <div class="wechat-subscribe">
+        <h2>📱 关注公众号</h2>
+        <p>更多职场、个人成长、程序员副业的探索和思考</p>
+        <img src="/assets/images/qrcode.jpg" alt="公众号：辣条加辣" />
+    </div>
+</div>
+{% endblock %}
+
+{% block header %}
+{{ super() }}
+<!-- 添加右上角下载按钮 -->
+<div class="download-corner">
+    <a href="{{ base_url }}/pdf/book.pdf" class="md-button" target="_blank" title="下载 PDF">
+        📚 离线下载
+    </a>
+</div>
+{% endblock %} 
