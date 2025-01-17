@@ -4,3 +4,4 @@ mkdocs-with-pdf>=0.9.0
 weasyprint==52.5
 pyyaml>=5.1
 fonttools>=4.0.0
+mkdocs-simple-hooks==0.1.5

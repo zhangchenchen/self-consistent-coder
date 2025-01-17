@@ -80,6 +80,9 @@ plugins:
       language: zh
       compress: true
       encoding: UTF-8
+  - mkdocs-simple-hooks:
+      hooks:
+        on_env: "docs.hooks:on_env"
 
 # 扩展配置
 extra:
