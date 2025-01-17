@@ -1,11 +1,11 @@
 # 基础配置
 site_name: 自洽的程序员
-site_url: https://your-domain.com
+site_url: https://self-consistent-coder.readthedocs.io/
 site_author: 辣条加辣
 site_description: 关于程序员职场和生活的思考
 docs_dir: docs
 site_dir: site
-use_directory_urls: false
+use_directory_urls: true
 
 # 主题配置
 theme:
