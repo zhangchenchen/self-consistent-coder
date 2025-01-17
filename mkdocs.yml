@@ -32,6 +32,13 @@ theme:
   
   # 配色方案
   palette:
+      # 深色模式
+    - scheme: slate
+      primary: blue grey   # 深色模式下的蓝灰色
+      accent: grey        # 保持简约的灰色
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至浅色模式
     # 亮色模式
     - scheme: default
       primary: grey        # 优雅的灰色
@@ -40,13 +47,6 @@ theme:
         icon: material/weather-night
         name: 切换至深色模式
     
-    # 深色模式
-    - scheme: slate
-      primary: blue grey   # 深色模式下的蓝灰色
-      accent: grey        # 保持简约的灰色
-      toggle:
-        icon: material/weather-sunny
-        name: 切换至浅色模式
 
   # 字体配置
   font:
