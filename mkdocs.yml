@@ -77,10 +77,10 @@ plugins:
       custom_template_path: docs/pdf_template
       debug_html: false
       show_anchors: false
-      font_family: "Noto Sans CJK SC"
-      font_path: ["docs/fonts/"]
+      font_family: "WenQuanYi Micro Hei"
       language: zh
       compress: true
+      encoding: UTF-8
 
 # 扩展配置
 extra:
