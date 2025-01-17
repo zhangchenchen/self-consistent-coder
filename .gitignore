@@ -1,4 +1,7 @@
+site/
+venv/
+.env
+__pycache__/
+*.pyc
 .DS_Store
 .cursorrules
-/venv
-/site
