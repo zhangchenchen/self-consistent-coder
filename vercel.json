@@ -5,8 +5,14 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "site"
+        "distDir": "site",
+        "installCommand": "apt-get update && apt-get install -y fonts-noto-cjk"
       }
     }
-  ]
+  ],
+  "build": {
+    "env": {
+      "DEBIAN_FRONTEND": "noninteractive"
+    }
+  }
 } 
