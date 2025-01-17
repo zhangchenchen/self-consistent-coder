@@ -1,0 +1,7 @@
+{
+  "name": "self-consistent-coder",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "python3 -m pip install --upgrade pip && python3 -m pip install -r requirements.txt && python3 -m mkdocs build"
+  }
+} 

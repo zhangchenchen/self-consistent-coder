@@ -1,0 +1,341 @@
+/* 链接样式 */
+.md-content a {
+    color: #546e7a;  /* 蓝灰色 */
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.md-content a:hover {
+    border-bottom-color: #546e7a;  /* hover 时下划线显示 */
+    color: #546e7a;  /* 保持相同颜色，不改变 */
+}
+
+/* 导航链接样式 */
+.md-nav__link {
+    color: #616161 !important;  /* 深灰色 */
+    transition: color 0.2s;     /* 添加颜色过渡效果 */
+}
+
+.md-nav__link:hover {
+    color: #455a64 !important;  /* 稍深的蓝灰色 */
+}
+
+/* 当前选中的导航项样式 */
+.md-nav__link--active {
+    color: #2c3e50 !important;  /* 更深的颜色 */
+    font-weight: 600;           /* 加粗 */
+    padding-left: 0.6rem;       /* 左侧缩进 */
+    border-left: 2px solid #455a64;  /* 左侧边框 */
+    background-color: rgba(0, 0, 0, 0.03);  /* 轻微的背景色 */
+}
+
+/* 当前选中项的父级导航 */
+.md-nav__item--active > .md-nav__link {
+    color: #2c3e50 !important;
+    font-weight: 500;
+}
+
+/* 优化导航项的间距 */
+.md-nav__item {
+    padding: 2px 0;
+}
+
+/* 去除链接的下划线 */
+.md-content a:focus,
+.md-content a:active {
+    outline: none;
+    color: #455a64;
+}
+
+/* 代码块样式优化 */
+.highlight {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+/* 标题样式优化 */
+.md-content h1, .md-content h2 {
+    color: #37474f;  /* 深蓝灰色 */
+    font-weight: 400;
+}
+
+/* 暗色模式下的标题样式 */
+[data-md-color-scheme="slate"] .md-content h1,
+[data-md-color-scheme="slate"] .md-content h2 {
+    color: #e0e0e0;  /* 更亮的灰白色 */
+    font-weight: 400;
+}
+
+/* 暗色模式下的链接样式 */
+[data-md-color-scheme="slate"] .md-content a {
+    color: #90caf9;  /* 浅蓝色 */
+}
+
+[data-md-color-scheme="slate"] .md-content a:hover {
+    border-bottom-color: #90caf9;
+    color: #90caf9;
+}
+
+/* 暗色模式下的导航链接样式 */
+[data-md-color-scheme="slate"] .md-nav__link {
+    color: #b0bec5 !important;  /* 浅蓝灰色 */
+}
+
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+    color: #e0e0e0 !important;  /* 更亮的灰白色 */
+}
+
+/* 暗色模式下当前选中的导航项样式 */
+[data-md-color-scheme="slate"] .md-nav__link--active {
+    color: #fff !important;
+    border-left: 2px solid #90caf9;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* 暗色模式下当前选中项的父级导航 */
+[data-md-color-scheme="slate"] .md-nav__item--active > .md-nav__link {
+    color: #fff !important;
+}
+
+/* 暗色模式下代码块样式 */
+[data-md-color-scheme="slate"] .highlight {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* 作者信息和公众号卡片样式 */
+.wechat-card {
+    margin-top: 4rem;
+    padding: 2.5rem;
+    border-top: 1px solid #eee;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+/* 作者信息区域 */
+.author-info {
+    margin-bottom: 2.5rem;
+}
+
+.author-info h2, .wechat-card h2 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.timeline {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    padding: 0.8rem 1rem;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+.timeline-item:hover {
+    transform: translateX(5px);
+}
+
+.timeline-item .emoji {
+    margin-right: 1.2rem;
+    font-size: 1.4rem;
+}
+
+.timeline-item strong {
+    min-width: 100px;
+    margin-right: 1.2rem;
+    color: #455a64;
+    font-weight: 500;
+}
+
+.timeline-item p {
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 分隔线 */
+.divider {
+    height: 1px;
+    background: #e0e0e0;
+    margin: 2.5rem auto;
+    width: 80%;
+    max-width: 500px;
+}
+
+/* 公众号区域 */
+.wechat-subscribe {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.wechat-subscribe p {
+    color: #666;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.95rem;
+}
+
+.wechat-subscribe img {
+    max-width: 180px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.wechat-subscribe img:hover {
+    transform: scale(1.02);
+}
+
+/* 暗色模式适配 */
+[data-md-color-scheme="slate"] .wechat-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-md-color-scheme="slate"] .author-info h2,
+[data-md-color-scheme="slate"] .wechat-card h2 {
+    color: #e0e0e0;
+}
+
+[data-md-color-scheme="slate"] .timeline-item {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+[data-md-color-scheme="slate"] .timeline-item strong {
+    color: #90caf9;
+}
+
+[data-md-color-scheme="slate"] .timeline-item p {
+    color: #b0bec5;
+}
+
+[data-md-color-scheme="slate"] .divider {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+[data-md-color-scheme="slate"] .wechat-subscribe p {
+    color: #b0bec5;
+}
+
+/* 下载按钮样式 */
+.download-button {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.download-button .md-button {
+    margin: 0 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.download-button .md-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 打印样式优化 */
+@media print {
+    .md-header,
+    .md-tabs,
+    .md-sidebar,
+    .download-button,
+    .wechat-card {
+        display: none !important;
+    }
+    
+    .md-content {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+/* 搜索框样式调整 */
+.md-search__form {
+    max-width: 18rem;  /* 限制搜索框最大宽度 */
+    margin-right: 1rem;  /* 与下载按钮保持间距 */
+}
+
+/* 右上角下载按钮样式 */
+.download-corner {
+    position: fixed;  /* 改为 fixed 定位 */
+    top: 0.4rem;
+    right: 4.8rem;
+    z-index: 31;
+    transition: transform .4s cubic-bezier(.1,.7,.1,1), opacity .25s;  /* 添加过渡效果 */
+}
+
+/* 响应头部隐藏 */
+[data-md-toggle="header"]:checked ~ .md-header .download-corner {
+    transform: translateY(-2.4rem);
+    opacity: 0;
+}
+
+/* 响应头部显示 */
+[data-md-toggle="header"]:not(:checked) ~ .md-header .download-corner {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.download-corner .md-button {
+    margin: 0;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: var(--md-primary-fg-color);
+    border: none;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    line-height: 1.6;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.download-corner .md-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    background-color: var(--md-accent-fg-color);
+    color: #fff;
+}
+
+/* 暗色模式适配 */
+[data-md-color-scheme="slate"] .download-corner .md-button {
+    background-color: var(--md-primary-fg-color);
+    color: #fff;
+}
+
+[data-md-color-scheme="slate"] .download-corner .md-button:hover {
+    background-color: var(--md-accent-fg-color);
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 76.1875em) {
+    .md-search__form {
+        max-width: 14rem;  /* 移动端下减小搜索框宽度 */
+    }
+    .download-corner {
+        right: 5.6rem;
+    }
+}
+
+/* 小屏幕适配 */
+@media screen and (max-width: 60em) {
+    .md-search__form {
+        max-width: 12rem;  /* 更小屏幕下进一步减小搜索框宽度 */
+    }
+    .download-corner {
+        right: 6.4rem;
+    }
+} 

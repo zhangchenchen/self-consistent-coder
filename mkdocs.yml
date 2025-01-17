@@ -1,19 +1,128 @@
+# 基础配置
 site_name: 自洽的程序员
-site_description: 关于程序员职场和生活的思考
+site_url: https://your-domain.com
 site_author: 辣条加辣
+site_description: 关于程序员职场和生活的思考
 
+# 主题配置
 theme:
-    name: rtd-dropdown
-    custom_dir: custom_theme/
-    static_templates:
-        - 404.html
+  name: material
+  language: zh
+  logo: assets/images/icon.png
+  favicon: assets/images/favicon.png
+  custom_dir: docs/overrides
+  
+  # 功能特性
+  features:
+    - navigation.footer
+    - navigation.top        
+    - navigation.tracking   
+    - search.highlight     
+    - content.code.copy    
+    - content.action.download
+    - content.action.view
+    - content.action.edit
+    - navigation.top
+    - navigation.tracking
+    - navigation.instant
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - search.suggest
+  
+  # 配色方案
+  palette:
+      # 深色模式
+    - scheme: slate
+      primary: blue grey   # 深色模式下的蓝灰色
+      accent: grey        # 保持简约的灰色
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至浅色模式
+    # 亮色模式
+    - scheme: default
+      primary: grey        # 优雅的灰色
+      accent: blue grey    # 蓝灰色作为强调色
+      toggle:
+        icon: material/weather-night
+        name: 切换至深色模式
+    
 
-markdown_extensions:
-    - toc:
-        permalink: true
-    - admonition
-    - footnotes
+  # 字体配置
+  font:
+    text: Roboto
+    code: Roboto Mono
+  
+  # 图标配置
+  icon:
+    repo: fontawesome/brands/github
+  repo_url: https://github.com/zhangchenchen/self-consistent-coder
+  repo_name: self-consistent-coder
+  edit_uri: edit/main/docs/
 
+# 插件配置
+plugins:
+  - search    # 搜索插件
+  - with-pdf:
+      author: 辣条加辣
+      cover: true
+      cover_title: 自洽的程序员
+      cover_subtitle: 关于程序员职场和生活的思考
+      toc_level: 2
+      output_path: pdf/book.pdf
+      stylesheets:
+        - docs/stylesheets/pdf.css
+      exclude_pages:
+        - 'index.md'
+      custom_template_path: docs/pdf_template
+      debug_html: false
+      show_anchors: false
+      font_family: "WenQuanYi Micro Hei"
+      language: zh
+      compress: true
+      encoding: UTF-8
+
+# 扩展配置
+extra:
+  social: 
+    - icon: fontawesome/brands/github
+      link: https://github.com/zhangchenchen
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/GeorgePekingzcc
+  generator: false  # 不显示 "Made with Material for MkDocs"
+  consent:
+    title: Cookie consent
+    description: >- 
+      我们使用 cookies 来识别您的重复访问和偏好，以及衡量我们文档的有效性和改进我们的网站。
+    actions:
+      - accept
+      - reject
+      - manage
+
+# PWA 配置
+pwa:
+  enabled: true  
+  name: 自洽的程序员  
+  short_name: 自洽程序员  
+  description: 关于程序员职场和生活的思考
+  theme_color: "#2196f3"  
+  background_color: "#ffffff"  
+  icon:
+    path: assets/images/icon.png  
+  prefer_related_applications: false
+
+# 资源文件
+extra_javascript:
+  - assets/js/analytics.js
+  - assets/js/adsense.js
+
+extra_css:
+  - stylesheets/extra.css
+
+# 版权信息
+copyright: Copyright &copy; 2024 辣条加辣.
+
+# 导航配置
 nav:
     - 首页: index.md
     - 前言: preface/index.md
@@ -54,3 +163,7 @@ nav:
         - 5.2 Gap无罪，寻找属于你自己的pathless path: chapter5/section2.md
         - 5.3 其实，没工作，也能活的很好: chapter5/section3.md
     - 结语：成为一个自洽的程序员: epilogue.md
+
+# 添加到 mkdocs.yml
+extra_files:
+  - docs/ads.txt
