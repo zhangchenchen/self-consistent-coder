@@ -1,16 +1,12 @@
 {
   "version": 2,
-  "buildCommand": "python3 -m pip install --upgrade pip && pip install -r requirements.txt && python3 -m mkdocs build",
-  "outputDirectory": "site",
   "builds": [
     {
-      "src": "build.sh",
+      "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "site",
-        "zeroConfig": true
+        "distDir": "site"
       }
     }
-  ],
-  "framework": null
+  ]
 } 
