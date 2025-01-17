@@ -1,3 +1,3 @@
 #!/bin/bash
 pip install -r requirements.txt
-mkdocs build --site-dir public 
+mkdocs build --site-dir site --config-file mkdocs.yml
