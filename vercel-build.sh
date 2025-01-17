@@ -1,3 +1,4 @@
 #!/bin/bash
+python -m pip install --upgrade pip
 pip install -r requirements.txt
-mkdocs build --site-dir site --config-file mkdocs.yml
+python -m mkdocs build -f mkdocs.yml -d site
