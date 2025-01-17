@@ -203,7 +203,13 @@
 
     <div class="wechat-section">
         <h3>公众号：辣条加辣</h3>
-        {% if environ.get('READTHEDOCS', '') == 'True' %}
+        <!-- 调试信息 -->
+        <div style="display: none;">
+            READTHEDOCS: {{ environ.get('READTHEDOCS', 'not set') }}
+            BASE_URL: {{ base_url }}
+        </div>
+        
+        {% if environ and environ.get('READTHEDOCS') %}
             <img src="/zh-cn/latest/assets/images/qrcode.jpg" alt="公众号二维码">
         {% else %}
             <img src="/assets/images/qrcode.jpg" alt="公众号二维码">
