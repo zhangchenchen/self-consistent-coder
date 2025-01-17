@@ -3,6 +3,9 @@ site_name: 自洽的程序员
 site_url: https://your-domain.com
 site_author: 辣条加辣
 site_description: 关于程序员职场和生活的思考
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
 
 # 主题配置
 theme:
@@ -22,11 +25,7 @@ theme:
     - content.action.download
     - content.action.view
     - content.action.edit
-    - navigation.top
-    - navigation.tracking
     - navigation.instant
-    - navigation.footer
-    - search.highlight
     - search.share
     - search.suggest
   
@@ -98,6 +97,7 @@ extra:
       - accept
       - reject
       - manage
+  assets_version: '1.0'
 
 # PWA 配置
 pwa:
@@ -167,3 +167,4 @@ nav:
 # 添加到 mkdocs.yml
 extra_files:
   - docs/ads.txt
+  - docs/assets/images/qrcode.jpg

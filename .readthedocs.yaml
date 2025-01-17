@@ -4,6 +4,13 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.11"
+  jobs:
+    post_create_environment:
+      # 在环境创建后，确保所需的目录存在
+      - mkdir -p docs/assets/images
+    post_build:
+      # 构建完成后，确保静态资源被复制到正确位置
+      - cp -r docs/assets/images _readthedocs/html/assets/
 
 mkdocs:
   configuration: mkdocs.yml
