@@ -28,6 +28,7 @@ theme:
     - navigation.instant
     - search.share
     - search.suggest
+    - content.tabs.link
   
   # 配色方案
   palette:
@@ -91,7 +92,7 @@ extra:
       link: https://github.com/zhangchenchen
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/GeorgePekingzcc
-  generator: false  # 不显示 "Made with Material for MkDocs"
+  generator: false
   consent:
     title: Cookie consent
     description: >- 
@@ -101,9 +102,6 @@ extra:
       - reject
       - manage
   assets_version: '1.0'
-  comments:
-    enabled: true
-    provider: giscus
 
 # PWA 配置
 pwa:
@@ -121,7 +119,6 @@ pwa:
 extra_javascript:
   - assets/js/analytics.js
   - assets/js/adsense.js
-  - assets/js/giscus.js
 
 extra_css:
   - stylesheets/extra.css
@@ -151,6 +148,7 @@ nav:
         - 2.9 天天用AI，以后自己不会写代码怎么办: chapter2/section9.md
         - 2.10 职场中如何做选择: chapter2/section10.md
         - 2.11 职场中最实用的三个思维模型: chapter2/section11.md
+        - 2.12 不会吹牛逼，述职/晋升总是吃亏怎么办: chapter2/section12.md
     - 第三章 工作中的人际关系:
         - 概述: chapter3/index.md
         - 3.1 领导一对一（1on1）聊什么: chapter3/section1.md
