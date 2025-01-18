@@ -338,4 +338,26 @@
     .download-corner {
         right: 6.4rem;
     }
+}
+
+.giscus-wrapper {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.giscus-wrapper h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.giscus-wrapper p {
+    margin-bottom: 1.5rem;
+    color: var(--md-default-fg-color--light);
+}
+
+/* 适配深色模式 */
+[data-md-color-scheme="slate"] .giscus-wrapper {
+    border-top-color: var(--md-default-fg-color--lighter);
 } 

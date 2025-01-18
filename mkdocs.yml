@@ -101,6 +101,9 @@ extra:
       - reject
       - manage
   assets_version: '1.0'
+  comments:
+    enabled: true
+    provider: giscus
 
 # PWA 配置
 pwa:
@@ -118,6 +121,7 @@ pwa:
 extra_javascript:
   - assets/js/analytics.js
   - assets/js/adsense.js
+  - assets/js/giscus.js
 
 extra_css:
   - stylesheets/extra.css
