@@ -1,8 +1,7 @@
 # 自洽的程序员
 
-## [在线阅读](https://self-consistent-coder.vercel.app/) 
+## [在线阅读](https://www.dev-life.site/) 
 
-> 如果打不开，可以用这个：[备份链接](https://self-consistent-coder.readthedocs.io/)
 
 ## 简介
 
@@ -50,6 +49,7 @@
   * [2.9 天天用AI，以后自己不会写代码怎么办](./docs/chapter2/section9.md)
   * [2.10 职场中如何做选择](./docs/chapter2/section10.md)
   * [2.11 职场中最实用的三个思维模型](./docs/chapter2/section11.md)
+  * [2.12 不会吹牛逼，述职/晋升总是吃亏怎么办？](./docs/chapter2/section12.md)
 * [第三章：工作中的人际关系 ](./docs/chapter3/index.md)
   * [3.1 领导一对一（1on1）聊什么](./docs/chapter3/section1.md)
   * [3.2 领导让我提意见，我该怎么提](./docs/chapter3/section2.md)
@@ -57,10 +57,13 @@
   * [3.4 同事是傻逼，我有厌蠢症，实在受不了了](./docs/chapter3/section4.md)
   * [3.5 卷王太凶残，我要不要'反卷'？](./docs/chapter3/section5.md)
   * [3.6 我没有晋升不重要，但是他的晋升让我不爽](./docs/chapter3/section6.md)
+  * [3.7 社恐人混职场是真难啊](./docs/chapter3/section7.md)
 * [第四章：工作与家庭](./docs/chapter4/index.md)
   * [4.1 好的伴侣可以帮你消化工作上的负面情绪](./docs/chapter4/section1.md)
   * [4.2 维系亲密关系最重要的一点](./docs/chapter4/section2.md)
   * [4.3 情绪稳定是个伪命题](./docs/chapter4/section3.md)
+  * [4.4 伴侣老是抱怨，我该怎么办](./docs/chapter4/section4.md)
+  * [4.5 婆媳关系真是男人的噩梦啊](./docs/chapter4/section5.md)
 * [第五章：只工作不上班](./docs/chapter5/index.md)
   * [5.1 我所接触到的程序员副业](./docs/chapter5/section1.md)
   * [5.2 gap 无罪，寻找属于你自己的pathless path](./docs/chapter5/section2.md)
