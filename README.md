@@ -50,6 +50,7 @@
   * [2.10 职场中如何做选择](./docs/chapter2/section10.md)
   * [2.11 职场中最实用的三个思维模型](./docs/chapter2/section11.md)
   * [2.12 不会吹牛逼，述职/晋升总是吃亏怎么办？](./docs/chapter2/section12.md)
+  * [2.13 程序员容易最忽略的几件重要的事](./docs/chapter2/section13.md)
 * [第三章：工作中的人际关系 ](./docs/chapter3/index.md)
   * [3.1 领导一对一（1on1）聊什么](./docs/chapter3/section1.md)
   * [3.2 领导让我提意见，我该怎么提](./docs/chapter3/section2.md)
