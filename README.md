@@ -37,6 +37,7 @@
   * [1.1 第一性原理思考工作](./docs/chapter1/section1.md)
   * [1.2 工作挣扎是常态](./docs/chapter1/section2.md)
   * [1.3 工作承载不了太多意义，但也不要陷入工作虚无主义](./docs/chapter1/section3.md)
+  * [1.4 人，要过得自私且坦荡](./docs/chapter1/section4.md)
 * [第二章：工作方法论](./docs/chapter2/index.md)  
   * [2.1 心态开放，你的职场第一课](./docs/chapter2/section1.md)
   * [2.2 下场去做，你的职场第二课](./docs/chapter2/section2.md)
