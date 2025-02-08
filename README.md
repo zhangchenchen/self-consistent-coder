@@ -87,6 +87,9 @@
 平时会分享一些职场、技术和个人成长的思考。
 
 ![公众号二维码](./docs/assets/images/qrcode.jpg)
+
+### 个人博客：[https://dev-life.online/](https://dev-life.online/)
+
 ---
 
 ## 许可证
