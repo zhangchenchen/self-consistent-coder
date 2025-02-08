@@ -63,6 +63,7 @@ theme:
 # 插件配置
 plugins:
   - search    # 搜索插件
+  # 本地开发时注释掉整个 with-pdf 插件配置
   - with-pdf:
       author: 辣条加辣
       cover: true

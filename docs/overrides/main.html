@@ -32,17 +32,24 @@
         <h2>📱 公众号: 辣条加辣</h2>
         <p>更多职场、个人成长、程序员副业的探索和思考</p>
         <img src="{{base_url}}/assets/images/qrcode.jpg" alt="公众号：辣条加辣" />
-        <a href="https://www.dev-life.online/" class="md-button" target="_blank" title="个人博客">个人博客</a>
+        <div class="button-group">
+            <a href="https://www.dev-life.online/" class="md-button" target="_blank" title="个人博客">
+                <span class="twemoji">
+                    {% include ".icons/material/web.svg" %}
+                </span>
+                个人博客
+            </a>
+            <a href="{{ base_url }}/pdf/book.pdf" class="md-button" target="_blank" title="下载 PDF">
+                <span class="twemoji">
+                    {% include ".icons/material/file-pdf-box.svg" %}
+                </span>
+                离线下载
+            </a>
+        </div>
     </div>
 </div>
 {% endblock %}
 
 {% block header %}
 {{ super() }}
-<!-- 添加右上角下载按钮 -->
-<div class="download-corner">
-    <a href="{{ base_url }}/pdf/book.pdf" class="md-button" target="_blank" title="下载 PDF">
-        📚 离线下载
-    </a>
-</div>
 {% endblock %} 

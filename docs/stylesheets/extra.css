@@ -360,4 +360,28 @@
 /* 适配深色模式 */
 [data-md-color-scheme="slate"] .giscus-wrapper {
     border-top-color: var(--md-default-fg-color--lighter);
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.button-group .md-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.button-group .twemoji {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.wechat-subscribe img {
+    max-width: 200px;
+    margin: 1rem auto;
+    display: block;
 } 
