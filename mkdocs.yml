@@ -1,8 +1,9 @@
 # 基础配置
 site_name: 自洽的程序员
-site_url: https://self-consistent-coder.readthedocs.io/
+site_url: https://www.dev-life.site/
 site_author: 辣条加辣
-site_description: 关于程序员职场和生活的思考
+site_description: >-
+  一本帮助程序员应对职场焦虑、倦怠、迷茫的指南。探讨程序员的工作哲学、方法论、人际关系和生活平衡。
 docs_dir: docs
 site_dir: site
 use_directory_urls: true
@@ -98,11 +99,19 @@ extra:
     title: Cookie consent
     description: >- 
       我们使用 cookies 来识别您的重复访问和偏好，以及衡量我们文档的有效性和改进我们的网站。
-    actions:
-      - accept
-      - reject
-      - manage
   assets_version: '1.0'
+  keywords: >-
+    程序员,职场,焦虑,工作方法论,职业发展,程序员成长,工作与生活平衡,职场人际关系
+  og_title: 自洽的程序员 - 程序员的职场生存指南
+  og_description: 一本帮助程序员应对职场焦虑、倦怠、迷茫的指南
+  og_image: assets/images/og-image.jpg
+  og_type: website
+  twitter_card: summary_large_image
+  twitter_site: "@GeorgePekingzcc"
+  twitter_creator: "@GeorgePekingzcc"
+  sitemap:
+    enabled: true
+    url: https://www.dev-life.site/
 
 # PWA 配置
 pwa:

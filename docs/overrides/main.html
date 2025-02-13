@@ -1,5 +1,43 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+  <!-- Meta 标签 -->
+  <meta name="keywords" content="{{ config.extra.keywords }}">
+  <meta name="description" content="{{ config.site_description }}">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ config.extra.og_title }}">
+  <meta property="og:description" content="{{ config.extra.og_description }}">
+  <meta property="og:image" content="{{ config.site_url }}{{ config.extra.og_image }}">
+  <meta property="og:type" content="{{ config.extra.og_type }}">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="{{ config.extra.twitter_card }}">
+  <meta name="twitter:site" content="{{ config.extra.twitter_site }}">
+  <meta name="twitter:creator" content="{{ config.extra.twitter_creator }}">
+
+  <!-- 结构化数据 -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": "{{ config.site_name }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ config.site_author }}"
+      },
+      "description": "{{ config.site_description }}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ config.site_author }}"
+      },
+      "inLanguage": "zh-CN",
+      "genre": "职场成长",
+      "keywords": "{{ config.extra.keywords }}"
+    }
+  </script>
+{% endblock %}
+
 {% block content %}
 {{ super() }}
 
@@ -31,7 +69,11 @@
     <div class="wechat-subscribe">
         <h2>📱 公众号: 辣条加辣</h2>
         <p>更多职场、个人成长、程序员副业的探索和思考</p>
-        <img src="{{base_url}}/assets/images/qrcode.jpg" alt="公众号：辣条加辣" />
+        <img 
+          src="{{base_url}}/assets/images/qrcode.jpg" 
+          alt="辣条加辣公众号二维码 - 分享程序员职场和成长经验" 
+          title="扫码关注公众号：辣条加辣"
+        />
         <div class="button-group">
             <a href="https://www.dev-life.online/" class="md-button" target="_blank" title="个人博客">
                 <span class="twemoji">
