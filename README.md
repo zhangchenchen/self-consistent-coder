@@ -71,6 +71,7 @@
   * [5.2 2025年程序员最值得做的副业](./docs/chapter5/section2.md)
   * [5.3 副业跑起来最重要的一点](./docs/chapter5/section3.md)
   * [5.4 副业中，如何克服畏难情绪](./docs/chapter5/section4.md)
+  * [5.5 如何平衡主业和副业](./docs/chapter5/section5.md)
 * [第六章：只工作不上班](./docs/chapter6/index.md)
   * [6.1 我所接触到的程序员副业](./docs/chapter6/section1.md)
   * [6.2 gap 无罪，寻找属于你自己的pathless path](./docs/chapter6/section2.md)
