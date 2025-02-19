@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 
 {% block extrahead %}
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0830M4X7R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z0830M4X7R');
+  </script>
+
   <!-- 百度站长验证 -->
   <meta name="baidu-site-verification" content="codeva-NpoViCNtCD" />
 
