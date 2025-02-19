@@ -65,24 +65,24 @@ theme:
 plugins:
   - search    # 搜索插件
   # 本地开发时注释掉整个 with-pdf 插件配置
-  - with-pdf:
-      author: 辣条加辣
-      cover: true
-      cover_title: 自洽的程序员
-      cover_subtitle: 关于程序员职场和生活的思考
-      toc_level: 2
-      output_path: pdf/book.pdf
-      stylesheets:
-        - docs/stylesheets/pdf.css
-      exclude_pages:
-        - 'index.md'
-      custom_template_path: docs/pdf_template
-      debug_html: false
-      show_anchors: false
-      font_family: "WenQuanYi Micro Hei"
-      language: zh
-      compress: true
-      encoding: UTF-8
+  # - with-pdf:
+  #     author: 辣条加辣
+  #     cover: true
+  #     cover_title: 自洽的程序员
+  #     cover_subtitle: 关于程序员职场和生活的思考
+  #     toc_level: 2
+  #     output_path: pdf/book.pdf
+  #     stylesheets:
+  #       - docs/stylesheets/pdf.css
+  #     exclude_pages:
+  #       - 'index.md'
+  #     custom_template_path: docs/pdf_template
+  #     debug_html: false
+  #     show_anchors: false
+  #     font_family: "WenQuanYi Micro Hei"
+  #     language: zh
+  #     compress: true
+  #     encoding: UTF-8
   - mkdocs-simple-hooks:
       hooks:
         on_env: "docs.hooks:on_env"
@@ -177,11 +177,17 @@ nav:
         - 4.3 情绪稳定是个伪命题: chapter4/section3.md
         - 4.4 伴侣老是抱怨，我该怎么办: chapter4/section4.md
         - 4.5 婆媳关系真是男人的噩梦啊: chapter4/section5.md
-    - 第五章 只工作不上班:
+    - 第五章 程序员副业:
         - 概述: chapter5/index.md
-        - 5.1 我所接触到的程序员副业: chapter5/section1.md
-        - 5.2 Gap无罪，寻找属于你自己的pathless path: chapter5/section2.md
-        - 5.3 其实，没工作，也能活的很好: chapter5/section3.md
+        - 5.1 打工人做副业，要先学会转换思维模式: chapter5/section1.md
+        - 5.2 2025年程序员最值得做的副业: chapter5/section2.md
+        - 5.3 副业跑起来最重要的一点: chapter5/section3.md
+        - 5.4 副业中，如何克服畏难情绪: chapter5/section4.md
+    - 第六章 只工作不上班:
+        - 概述: chapter6/index.md
+        - 6.1 我所接触到的程序员副业: chapter6/section1.md
+        - 6.2 gap 无罪，寻找属于你自己的pathless path: chapter6/section2.md
+        - 6.3 其实，不工作，也能活得很好: chapter6/section3.md
     - 结语：成为一个自洽的程序员: epilogue.md
 
 # 添加到 mkdocs.yml
