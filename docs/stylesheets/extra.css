@@ -384,4 +384,55 @@
     max-width: 200px;
     margin: 1rem auto;
     display: block;
+}
+
+/* Native Banner 容器样式 */
+.native-ad-container {
+    margin: 2rem 0;
+    padding: 1rem;
+    border-top: 1px solid #eee;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* 暗色模式适配 */
+[data-md-color-scheme="slate"] .native-ad-container {
+    border-top-color: var(--md-default-fg-color--lighter);
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 76.1875em) {
+    .native-ad-container {
+        margin: 1rem 0;
+    }
+}
+
+/* In-Page Push 容器样式 */
+.ipp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Ad Container 样式 */
+.ad-container {
+    margin: 2rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid var(--md-default-fg-color--lightest);
+    border-bottom: 1px solid var(--md-default-fg-color--lightest);
+    text-align: center;
+}
+
+/* 暗色模式适配 */
+[data-md-color-scheme="slate"] .ad-container {
+    border-color: var(--md-default-fg-color--lighter);
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 76.1875em) {
+    .ad-container {
+        margin: 1.5rem 0;
+        padding: 0.8rem 0;
+    }
 } 
