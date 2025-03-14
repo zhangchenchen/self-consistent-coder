@@ -65,24 +65,24 @@ theme:
 plugins:
   - search    # 搜索插件
   # 本地开发时注释掉整个 with-pdf 插件配置
-  - with-pdf:
-      author: 辣条加辣
-      cover: true
-      cover_title: 自洽的程序员
-      cover_subtitle: 关于程序员职场和生活的思考
-      toc_level: 2
-      output_path: pdf/book.pdf
-      stylesheets:
-        - docs/stylesheets/pdf.css
-      exclude_pages:
-        - 'index.md'
-      custom_template_path: docs/pdf_template
-      debug_html: false
-      show_anchors: false
-      font_family: "WenQuanYi Micro Hei"
-      language: zh
-      compress: true
-      encoding: UTF-8
+  # - with-pdf:
+  #     author: 辣条加辣
+  #     cover: true
+  #     cover_title: 自洽的程序员
+  #     cover_subtitle: 关于程序员职场和生活的思考
+  #     toc_level: 2
+  #     output_path: pdf/book.pdf
+  #     stylesheets:
+  #       - docs/stylesheets/pdf.css
+  #     exclude_pages:
+  #       - 'index.md'
+  #     custom_template_path: docs/pdf_template
+  #     debug_html: false
+  #     show_anchors: false
+  #     font_family: "WenQuanYi Micro Hei"
+  #     language: zh
+  #     compress: true
+  #     encoding: UTF-8
   - mkdocs-simple-hooks:
       hooks:
         on_env: "docs.hooks:on_env"
@@ -190,3 +190,7 @@ nav:
         - 6.2 gap 无罪，寻找属于你自己的pathless path: chapter6/section2.md
         - 6.3 其实，不工作，也能活得很好: chapter6/section3.md
     - 结语：成为一个自洽的程序员: epilogue.md
+    - 法律条款:
+        - 服务条款: terms.md
+        - 隐私政策: privacy.md
+        - Cookie 政策: cookies.md

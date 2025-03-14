@@ -435,4 +435,43 @@
         margin: 1.5rem 0;
         padding: 0.8rem 0;
     }
+}
+
+/* 页脚法律链接样式 */
+.footer-legal-links {
+    text-align: center;
+    margin: 3rem 0 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--md-default-fg-color--lightest);
+    font-size: 0.8rem;
+    color: var(--md-default-fg-color--light);
+}
+
+.footer-legal-links a {
+    color: var(--md-default-fg-color--light);
+    text-decoration: none;
+    transition: color 0.2s;
+    padding: 0 0.5rem;
+}
+
+.footer-legal-links a:hover {
+    color: var(--md-accent-fg-color);
+    text-decoration: underline;
+}
+
+.footer-legal-links .separator {
+    color: var(--md-default-fg-color--lighter);
+}
+
+/* 暗色模式下的页脚链接样式 */
+[data-md-color-scheme="slate"] .footer-legal-links {
+    border-top-color: var(--md-default-fg-color--lighter);
+}
+
+[data-md-color-scheme="slate"] .footer-legal-links a {
+    color: var(--md-default-fg-color--light);
+}
+
+[data-md-color-scheme="slate"] .footer-legal-links a:hover {
+    color: var(--md-accent-fg-color);
 } 
