@@ -474,4 +474,46 @@
 
 [data-md-color-scheme="slate"] .footer-legal-links a:hover {
     color: var(--md-accent-fg-color);
+}
+
+/* 相关项目样式 */
+.related-projects {
+    text-align: center;
+    margin: 2rem 0 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.related-projects h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--md-default-fg-color);
+}
+
+.related-links {
+    margin-bottom: 1.5rem;
+}
+
+.related-links a {
+    color: var(--md-accent-fg-color);
+    text-decoration: none;
+    transition: color 0.2s;
+    padding: 0 0.5rem;
+}
+
+.related-links a:hover {
+    text-decoration: underline;
+}
+
+.related-links .separator {
+    color: var(--md-default-fg-color--lighter);
+}
+
+/* 暗色模式下的相关项目样式 */
+[data-md-color-scheme="slate"] .related-projects {
+    border-top-color: var(--md-default-fg-color--lighter);
+}
+
+[data-md-color-scheme="slate"] .related-projects h3 {
+    color: var(--md-default-fg-color--light);
 } 
