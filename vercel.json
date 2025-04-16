@@ -5,8 +5,9 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "site"
+        "distDir": "site",
+        "buildCommand": "pip install -r requirements.txt && python -m mkdocs build -f mkdocs.yml -d site"
       }
     }
   ]
-} 
+}
