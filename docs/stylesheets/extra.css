@@ -476,6 +476,113 @@
     color: var(--md-accent-fg-color);
 }
 
+/* Picture to Drawing Banner 样式 */
+.picture-drawing-banner {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.picture-drawing-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-icon {
+    font-size: 2.5rem;
+    min-width: 3rem;
+    text-align: center;
+}
+
+.banner-text {
+    flex: 1;
+    color: white;
+}
+
+.banner-text h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+}
+
+.banner-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+.banner-button {
+    background: rgba(255, 255, 255, 0.2);
+    color: white !important;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    white-space: nowrap;
+}
+
+.banner-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 76.1875em) {
+    .banner-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .banner-icon {
+        font-size: 2rem;
+    }
+    
+    .banner-text h3 {
+        font-size: 1.1rem;
+    }
+    
+    .banner-text p {
+        font-size: 0.85rem;
+    }
+    
+    .banner-button {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* 暗色模式适配 */
+[data-md-color-scheme="slate"] .picture-drawing-banner {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);
+}
+
 /* 相关项目样式 */
 .related-projects {
     text-align: center;
