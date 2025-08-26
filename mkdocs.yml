@@ -94,6 +94,12 @@ extra:
       link: https://github.com/zhangchenchen
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/GeorgePekingzcc
+    - icon: fontawesome/solid/link
+      link: https://bento.me/pekingzcc0914
+      name: Bento链接
+    - icon: fontawesome/solid/link  
+      link: https://linktr.ee/pekingzcc
+      name: Linktree链接
   generator: false
   consent:
     title: Cookie consent
